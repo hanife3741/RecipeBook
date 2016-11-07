@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC9EFC90-85B1-4473-B8D3-A383A887C426}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>yemek</RootNamespace>
+    <AssemblyName>yemek</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenu.Designer.cs">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tarifduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarifduzenle.Designer.cs">
+      <DependentUpon>tarifduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tarifekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarifekle.Designer.cs">
+      <DependentUpon>tarifekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="turekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="turekle.Designer.cs">
+      <DependentUpon>turekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciduzenle.Designer.cs">
+      <DependentUpon>kullaniciduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicisil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicisil.Designer.cs">
+      <DependentUpon>kullanicisil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tarif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarif.Designer.cs">
+      <DependentUpon>tarif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tarifsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarifsil.Designer.cs">
+      <DependentUpon>tarifsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="turduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="turduzenle.Designer.cs">
+      <DependentUpon>turduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tursil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tursil.Designer.cs">
+      <DependentUpon>tursil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anamenu.resx">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarifduzenle.resx">
+      <DependentUpon>tarifduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarifekle.resx">
+      <DependentUpon>tarifekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="turekle.resx">
+      <DependentUpon>turekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciduzenle.resx">
+      <DependentUpon>kullaniciduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicisil.resx">
+      <DependentUpon>kullanicisil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tarif.resx">
+      <DependentUpon>tarif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarifsil.resx">
+      <DependentUpon>tarifsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="turduzenle.resx">
+      <DependentUpon>turduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tursil.resx">
+      <DependentUpon>tursil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan-resimleri3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beyinterk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilan-ekle-ikon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruyada-Kagit-Gormek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400_F_40226247_6iUJKvCnxa0RHihllCJKpBM1sAsNEMZB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruyada-Kagit-Gormek1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_post_icon %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cikis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2816%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2817%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_sil1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2813%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2813%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilan-ekle-ikon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruyada-Kagit-Gormek2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%297.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaart geboorte sil %28klein%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_post_icon %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2812%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2812%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asci-gormek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asci-gormek1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k_04113108_yemek_asci.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asci-gormek2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12695931043447-o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asci-amca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20070129201020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cikis1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recyclebinfullbg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-icon-white-background_small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_12825701-Chef-hat-vector-icon-set.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2816%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallery_image_grafik_resimler_3d_men_resimleri_C1t3h63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AndDFG8p4v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-icon-set-vector_small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-refresh-icon_small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-refresh-icon_small1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
